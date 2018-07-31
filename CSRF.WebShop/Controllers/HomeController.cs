@@ -12,6 +12,16 @@ namespace CSRF.WebShop.Controllers
     {
         public IActionResult Index()
         {
+
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(int amount)
+        {
+            ViewData["Amount"] = amount;
+
             return View();
         }
 
